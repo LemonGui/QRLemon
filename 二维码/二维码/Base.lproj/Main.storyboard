@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3tF-Ez-m3a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3tF-Ez-m3a">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="ZCa-Yx-r4M">
             <objects>
                 <navigationController id="3tF-Ez-m3a" customClass="LGNavigationController" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Ef-he-zOz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9x-Zm-cVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="352"/>
+            <point key="canvasLocation" x="-886" y="-331"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -33,11 +33,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-y3-1uC">
-                                <rect key="frame" x="190" y="266" width="100" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="制作二维码"/>
                                 <connections>
@@ -45,7 +44,6 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejP-w6-lWq">
-                                <rect key="frame" x="50" y="266" width="60" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="扫一扫"/>
                                 <connections>
@@ -53,7 +51,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ejP-w6-lWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="8TB-hE-dDP"/>
                             <constraint firstItem="ejP-w6-lWq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DQB-vL-Zag"/>
@@ -62,10 +60,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gC2-5D-78z"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="12" y="-344"/>
         </scene>
         <!--Scan View Controller-->
         <scene sceneID="g0p-x0-8Tr">
@@ -76,16 +74,15 @@
                         <viewControllerLayoutGuide type="bottom" id="JvE-eQ-qR8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4S5-Xw-iI5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Ii-S9-YLZ"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piR-nt-jSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="76"/>
+            <point key="canvasLocation" x="996" y="-584"/>
         </scene>
         <!--Creat View Controller-->
         <scene sceneID="08v-LR-sFT">
@@ -96,11 +93,10 @@
                         <viewControllerLayoutGuide type="bottom" id="gxA-OA-2q9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pda-yH-s86">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入二维码内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLR-mU-tvh">
-                                <rect key="frame" x="10" y="84" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="N7r-ya-J8M"/>
                                 </constraints>
@@ -108,7 +104,6 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el3-BN-h2W">
-                                <rect key="frame" x="10" y="144" width="300" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="确定"/>
                                 <connections>
@@ -116,13 +111,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c15-by-h8o">
-                                <rect key="frame" x="10" y="199" width="300" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="c15-by-h8o" secondAttribute="height" multiplier="1:1" id="u93-Xz-lyh"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adj-wT-AxE">
-                                <rect key="frame" x="10" y="519" width="300" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="换个样式"/>
                                 <connections>
@@ -130,7 +123,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="adj-wT-AxE" firstAttribute="leading" secondItem="pda-yH-s86" secondAttribute="leading" constant="10" id="41c-YM-rKt"/>
                             <constraint firstItem="c15-by-h8o" firstAttribute="top" secondItem="el3-BN-h2W" secondAttribute="bottom" constant="20" id="6C3-IX-hHf"/>
@@ -147,7 +140,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MfX-e2-mhk"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="outPutImage" destination="c15-by-h8o" id="31Q-L6-dDG"/>
                         <outlet property="qrTextView" destination="NLR-mU-tvh" id="liZ-QW-VL0"/>
@@ -155,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUB-1b-g9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941" y="768"/>
+            <point key="canvasLocation" x="996" y="119"/>
         </scene>
     </scenes>
 </document>
