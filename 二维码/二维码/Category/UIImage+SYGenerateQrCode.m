@@ -201,7 +201,7 @@
     if (size == 1024) return image;
     
     CGSize imageSize = CGSizeMake(size, size);
-    UIGraphicsBeginImageContext(imageSize);
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, [UIScreen mainScreen].scale);
     [image drawInRect: (CGRect){ 0, 0, (imageSize) }];
     UIImage * resultImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

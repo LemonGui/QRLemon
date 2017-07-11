@@ -199,7 +199,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
     CGSize imageSize = CGSizeMake(brinkSize.width - 2 * whiteSize, brinkSize.height - 2 * whiteSize);
     CGFloat imageX = brinkX + whiteSize;
     CGFloat imageY = brinkY + whiteSize;
-    UIGraphicsBeginImageContext(originImage.size);
+    UIGraphicsBeginImageContextWithOptions(originImage.size, NO , [UIScreen mainScreen].scale);
     [originImage drawInRect: (CGRect){ 0, 0, (originImage.size) }];
     [whiteBG drawInRect: (CGRect){ brinkX, brinkY, (brinkSize) }];
     [insertImage drawInRect: (CGRect){ imageX, imageY, (imageSize) }];
@@ -223,7 +223,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
     CGSize imageSize = CGSizeMake(backgroundImage.size.width - 2 * whiteSize, backgroundImage.size.height - 2 * whiteSize);
     CGFloat imageX = whiteSize;
     CGFloat imageY = whiteSize;
-    UIGraphicsBeginImageContext(backgroundImage.size);
+    UIGraphicsBeginImageContextWithOptions(backgroundImage.size, NO, [UIScreen mainScreen].scale);
     [backgroundImage drawInRect: (CGRect){ 0, 0, (backgroundImage.size) }];
     [originImage drawInRect: (CGRect){ imageX, imageY, (imageSize) }];
     UIImage * resultImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -280,7 +280,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
 //图像合成
 + (UIImage *)imageSyntheticWithQrImage:(UIImage *)qrImage fillImage:(UIImage *)fillImage
 {
-    UIGraphicsBeginImageContext(qrImage.size);
+    UIGraphicsBeginImageContextWithOptions(qrImage.size, NO, [UIScreen mainScreen].scale);
     [fillImage drawInRect:CGRectMake(0, 0, qrImage.size.width, qrImage.size.height)];
     [qrImage drawInRect:CGRectMake(0, 0, qrImage.size.width, qrImage.size.height)];
     UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
