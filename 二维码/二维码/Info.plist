@@ -49,5 +49,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>若不允许，您将无法在阅读文章等内容时将图片保存至相册</string>
 </dict>
 </plist>

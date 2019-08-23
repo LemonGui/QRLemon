@@ -112,7 +112,7 @@
     [self fillWhiteToTransparentOnPixel:rgbImageBuf pixelNum:pixelNumber colorModel1:colorModel1 colorModel2:colorModel2 isFill:isFill];
     
     //将内存转成image
-    CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL, rgbImageBuf, bytesPerRow, ProviderReleaseData);
+    CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL, rgbImageBuf, bytesPerRow *  imageHeight, ProviderReleaseData);
     CGImageRef imageRef = CGImageCreate(imageWidth, imageHeight, 8, 32, bytesPerRow, colorSpace, kCGImageAlphaLast | kCGBitmapByteOrder32Little, dataProvider, NULL, true, kCGRenderingIntentDefault);
     UIImage * resultImage = [UIImage imageWithCGImage: imageRef];
     
